@@ -121,7 +121,7 @@ agent, current_device = load_trained_agent()
 # KOLOM KIRI: INPUT AREA
 # --------------------------------------------------
 with col_kiri:
-    st.subheader("🛠️ Input Konfigurasi JSSP")
+    st.subheader(" Input Konfigurasi JSSP")
     st.write("Silakan unggah spesifikasi masalah JSSP dalam format teks benchmark.")
     
     final_instance = None
@@ -152,9 +152,9 @@ with col_kiri:
     
     # Tombol optimasi diaktifkan HANYA jika file sudah diunggah
     if final_instance is not None:
-        btn_optimize = st.button("🚀 Jalankan Optimasi Penjadwalan", type="primary")
+        btn_optimize = st.button(" Jalankan Optimasi Penjadwalan", type="primary")
     else:
-        st.info("💡 Unggah file di atas terlebih dahulu untuk mengaktifkan tombol optimasi.")
+        st.info(" Unggah file di atas terlebih dahulu untuk mengaktifkan tombol optimasi.")
         btn_optimize = False
 
 # --------------------------------------------------
